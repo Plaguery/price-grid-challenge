@@ -12,13 +12,12 @@ html {
   border-radius: 5px;
   box-shadow: 0px 0px 10px grey;
   margin: 25px;
-  width: 600px;
-  height: 460px;
+  max-width: 600px;
+
   
 }
 
 #join {
-  height: 45%;
 }
 
 #join h1 {
@@ -38,7 +37,7 @@ html {
 }
 
 #horizontal-section {
-  height: 55%;
+
   display: flex;
   flex-direction: row;
   color: white;
@@ -75,6 +74,8 @@ button {
   height: 40px;
   text-align: center;
   border-radius: 5px;
+  margin-top:10px;
+
 }
 
 button:hover {
@@ -92,6 +93,10 @@ button:hover {
   width: 50%;
 }
 
+#why h2{
+  margin-bottom: 5px;
+}
+
 
 ul {
   list-style-type: none;
@@ -103,4 +108,18 @@ li {
 }
 section {
   padding: 30px;
+}
+
+@media (max-width:576px){
+
+  #horizontal-section {
+    flex-direction: column;
+  }
+  
+  #subscribe{
+    width:100%;
+  }
+  #why{
+    width: 100%;
+  }
 }
